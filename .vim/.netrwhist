@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/francescobersani/Documents/work/hybris_workbench/hybris-commerce-suite-5.4.0.0'
+let g:netrw_dirhist_2='/Users/francescobersani/Documents/work/hybris_workbench/hybris-commerce-suite-5.4.0.0/hybris/bin/platform'
+let g:netrw_dirhist_3='/Users/francescobersani/.vim/syntax'
