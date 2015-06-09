@@ -61,3 +61,7 @@ setjdk 1.7
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+alias vim="/usr/local/bin/vim"
+
+
+
