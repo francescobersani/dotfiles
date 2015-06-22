@@ -102,3 +102,7 @@ brew install zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Install tmux
+brew install tmuc
+brew install reattach-to-user-namespace
