@@ -104,3 +104,17 @@ endif
 
 "enabling impex syntax
 au BufRead,BufNewFile *.impex set filetype=impex
+
+
+" switch between line number visualization with CTRL+n
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+
