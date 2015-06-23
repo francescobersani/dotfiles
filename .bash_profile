@@ -51,9 +51,10 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # set default jdk to 1.7
-if [[ getplatform -eq 'osx' ]]; then
-	setjdk 1.7;
-fi;
+#if [[ getplatform -eq 'osx' ]]; then
+#	setjdk 1.7;
+#fi;
+
 ##
 # Your previous /Users/i318650/.bash_profile file was backed up as /Users/i318650/.bash_profile.macports-saved_2015-05-16_at_19:50:39
 ##
