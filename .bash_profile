@@ -1,7 +1,3 @@
-
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH:/usr/local/bin";
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -55,21 +51,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 #	setjdk 1.7;
 #fi;
 
-##
-# Your previous /Users/i318650/.bash_profile file was backed up as /Users/i318650/.bash_profile.macports-saved_2015-05-16_at_19:50:39
-##
-
-# MacPorts Installer addition on 2015-05-16_at_19:50:39: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-alias vim="/usr/local/bin/vim"
-
-#brew path setup: dding an appropriate PATH variable for use with brew.
-PATH="/usr/local/bin:$PATH"
-
-
-
 # use liquidpromt instead my custom promt (.bash_prompt becomes deprecated)
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source liquidprompt/liquidprompt
@@ -77,4 +58,9 @@ PATH="/usr/local/bin:$PATH"
 if [ -f .liquidpromt ]; then
   source .liquidpromt;
 fi;
+
+
+# add platform specific bash profile configuration
+profile_file=".bash_profile_$(uname)"
+[ -r "${profile_file,,}" ] && [ -f "${profile_file,,}" ] && source "${profile_file,,}";
 

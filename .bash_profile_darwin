@@ -1,0 +1,12 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH:/usr/local/bin";
+
+# MacPorts Installer addition on 2015-05-16_at_19:50:39: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# use the right vim version
+alias vim="/usr/local/bin/vim"
+
+#brew path setup: dding an appropriate PATH variable for use with brew.
+PATH="/usr/local/bin:$PATH"
