@@ -53,7 +53,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # use liquidpromt instead my custom promt (.bash_prompt becomes deprecated)
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 if [ -f .liquidpromt ]; then
   source .liquidpromt;
