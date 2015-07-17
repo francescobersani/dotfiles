@@ -71,7 +71,7 @@ apt-get install xfonts-terminus
 #install developer tools
 apt-get install gnome-commander
 apt-get install libxml2-utils
-
+apt-get install curl
 # Remove outdated versions from the cellar.
 apt-get clean
 apt-get autoclean
