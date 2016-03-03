@@ -281,5 +281,14 @@ function get_base_usr_path(){
 	fi;
 }
 
-
-
+# hybris yenv tool
+yenv() {
+    real_yenv_path=$(which yenv)
+    if [ -z "$real_yenv_path" ]; then echo "yenv not installed!"; return; fi
+    if [ "$1" == "goto" ]; then
+        cd $($real_yenv_path path "$2")
+    else
+        $real_yenv_path "$@"
+    fi
+}
+complete -W "$(yenv completion)" yenv
